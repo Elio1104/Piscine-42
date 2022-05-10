@@ -1,0 +1,5 @@
+Credentials cache: API:FB3DB33B-86B6-47F7-9249-F0411B4FFBF8
+        Principal: alondot@S19.BE
+
+  Issued                Expires               Principal
+Nov 10 15:11:32 2021  Nov 11 01:11:32 2021  krbtgt/S19.BE@S19.BE

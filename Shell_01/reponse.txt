@@ -1,0 +1,4 @@
+ex 07 
+cat /etc/passwd |sed '/^#/d' | awk 'NR%2==0' | sed 's/:.*//' | rev | sort -r | sed -n "$FT_LINE1,$FT_LINE2 p" | tr '\n' ', ' | sed 's/,/, /g'| sed 's/, $/./' | tr -d "\n"
+Ex 08
+echo "$FT_NBR1 + $FT_NBR2" | sed "s/'/0/g" | sed 's/\\/1/g' | sed 's/\"/2/g' | sed 's/?/3/g' | sed 's/\!/4/g' | sed 's/m/0/g' | sed 's/r/1/g' | sed 's/d/2/g' | sed 's/o/3/g' | sed 's/c/4/g' | xargs echo "obase=5; ibase=5;" | bc | xargs echo "obase=13; ibase=5;" | bc| sed 's/0/g/g' | sed 's/1/t/g' | sed 's/2/a/g' | sed 's/3/i/g' | sed 's/4/o/g' | sed 's/5/ /g' | sed 's/6/l/g' | sed 's/7/u/g' | sed 's/8/S/g' | sed 's/9/n/g' | sed 's/A/e/g' | sed 's/B/m/g' | sed 's/C/f/g'
